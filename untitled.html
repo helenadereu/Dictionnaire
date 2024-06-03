@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche</title>
+</head>
+<body>
+    <h1>Recherche de mots</h1>
+    <input type="text" id="rechercheInput" placeholder="Rechercher...">
+    <ul id="resultats"></ul>
+
+    <script>
+        function rechercher() {
+            const termeRecherche = document.getElementById("rechercheInput").value.toLowerCase();
+            const elements = document,.querySelectorAll("li");
+            elements.forEach(function(element) {
+                const contenu = element.textContent.toLowerCase();
+                if (contenu.includes(termeRecherche)) {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            });
+        }
+
+        // Ajouter un écouteur d'événement pour le champ de recherche
+        document.getElementById("rechercheInput").addEventListener("input", rechercher);
+    </script>    
+    </ul>
+</body>
+</html>
+
+<body>
+    <header>
+        <h1>Dictionnaire</h1>
+    </header>
+
+    <main>
+        <div id="alphabet">
+            <ul>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/A.html">A</a></li> 
+                <li><a href="file:///Users/helena/Desktop/projet%20test/B.html">B</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/C.html">C</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/D.html">D</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/E.html">E</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/F.html">F</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/G.html">G</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/H.html">H</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/I.html">I</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/J.html">J</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/K.html">K</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/L.html">L</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/M.html">M</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/N.html">N</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/O.html">O</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/P.html">P</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/Q.html">Q</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/R.html">R</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/S.html">S</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/T.html">T</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/U.html">U</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/V.html">V</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/W.html">W</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/X.html">X</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/Y.html">Y</a></li>
+                <li><a href="file:///Users/helena/Desktop/projet%20test/Z.html">Z</a></li>
+
+                <!-- Ajouter d'autres lettres ici -->
+            </ul>
+        </div>
+
+        <div id="dictionnaire">
+        </div>
+    </main>
+
+    <footer>
+        <p> xoxo gossip girl <3
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
